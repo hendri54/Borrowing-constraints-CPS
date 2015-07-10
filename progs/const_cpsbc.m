@@ -20,12 +20,15 @@ cS.setDefault = 1;
 % For shared constants
 bcS = const_bc1([]);
 % Constants to simply copy (to keep progs more self-contained)
-constV = {'missVal', 'male', 'female', 'both', 'sexStrV', 'bYearV', 'age1', 'cpiBaseYear'};
+constV = {'missVal', 'male', 'female', 'both', 'sexStrV', 'bYearV', 'cohYearV', 'age1', 'cpiBaseYear'};
 for i1 = 1 : length(constV)
    cS.(constV{i1}) = bcS.(constV{i1});
 end
 % Work start ages (for present values)
 cS.ageWorkStart_sV = bcS.ageWorkStart_sV + bcS.age1 - 1;
+% Last year of work to include
+%  Higher yields missing values in age year stats
+cS.ageWorkLast = bcS.physAgeRetire;
 
 cS.baseDir = bcS.cpsDir;
 % Directory with program files
@@ -83,9 +86,6 @@ cS.fltWeeksMin = 30;
 cS.wageMinFactor = 0.05;
 cS.wageMaxFactor = 100;
 
-% Last year of work to include
-%  Higher yields missing values in age year stats
-cS.ageWorkLast = 66;
 
 % Which earnings concept to use in wage regressions?
 cS.iLogMedian = 23;

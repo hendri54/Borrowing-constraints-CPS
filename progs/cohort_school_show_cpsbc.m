@@ -79,20 +79,24 @@ if 01
 end
 
 
-% ***********  Fraction trying (out of HS) and fraction succeeding
+
+%%  Fraction trying (out of HS) and fraction succeeding
 if 01
    fh = output_bc1.fig_new(saveFigures, []);
    hold on;
    idxV = find(fracDropV > 0);
-   plot(bYearV(idxV), 1 - fracDropV(idxV),   '-', 'Color', figS.colorM(1,:));
-   plot(bYearV(idxV), fracTryCollHSV(idxV),  '-', 'Color', figS.colorM(2,:));
-   plot(bYearV(idxV), fracBA_HSV(idxV),   '-', 'Color', figS.colorM(3,:));
+   iLine = 1;
+   plot(bYearV(idxV), 1 - fracDropV(idxV),   figS.lineStyleDenseV{iLine}, 'Color', figS.colorM(iLine,:));
+   iLine = iLine + 1;
+   plot(bYearV(idxV), fracTryCollHSV(idxV),  figS.lineStyleDenseV{iLine}, 'Color', figS.colorM(iLine,:));
+   iLine = iLine + 1;
+   plot(bYearV(idxV), fracBA_HSV(idxV),   figS.lineStyleDenseV{iLine}, 'Color', figS.colorM(iLine,:));
    %plot(gradeM(:,1) - 20,  gradeM(:,2) - gradeM(1,2), '-',  'Color',  figS.colorM(3,:));
 
    hold off;
    xlabel('Birth year');
-   legend({'BA/try', 'Try/HS', 'BA/HS'}, 'Location', 'Best');
-   ylabel('Fraction completing BA');
+   legend({'BA/entry', 'Entry/HSG', 'BA/HSG'}, 'Location', 'Best');
+   ylabel('Fraction');
    output_bc1.fig_format(fh, 'line');
 
    save_fig_cpsbc('cohort_completion', saveFigures, [], setNo);   

@@ -108,6 +108,7 @@ validateattributes(saveS.logEarn_ascM, {'double'}, {'finite', 'nonnan', 'nonempt
 
 
 %% Present value of lifetime earnings
+% Discounted to age 1
 
 saveS.pvEarn_scM = nan([cS.nSchool, nCohorts]);
 % Discount to this age
@@ -120,8 +121,9 @@ for iCohort = 1 : nCohorts
    for iSchool = 1 : cS.nSchool
       % Earnings by phys age
       earnV = zeros([cS.ageWorkLast, 1]);
-      workAgeV = cS.ageWorkStart_sV : cS.ageWorkLast;
+      workAgeV = cS.ageWorkStart_sV(iSchool) : cS.ageWorkLast;
       earnV(workAgeV) = exp(saveS.logEarn_ascM(workAgeV, iSchool, iCohort));
+      validateattributes(earnV(workAgeV), {'double'}, {'finite', 'nonnan', 'nonempty', 'real', 'positive'})
       % Present value, discounted to age1
       saveS.pvEarn_scM(iSchool, iCohort) = sum(earnV(age1 : cS.ageWorkLast) .* discFactorV);
    end
