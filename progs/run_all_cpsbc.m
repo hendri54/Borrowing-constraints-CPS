@@ -1,8 +1,8 @@
-function run_all_cpsbc(setNo)
+function run_all_cpsbc(setName)
 % run everything in sequence
 % ----------------------------------
 
-cS = const_cpsbc(setNo);
+cS = const_cpsbc(setName);
 yearV = cS.yearV;
 saveFigures = 1;
 
@@ -15,36 +15,23 @@ saveFigures = 1;
 
 %% Get cps data
 
-% ****  Import cps variables
-if 01
-   for year1 = yearV(:)'
-      % Filter 
-      filter_cpsbc(year1, setNo);
+dmS = import_cpsbc.DataMatrix(setName);
+dmS.run_all;
 
-      % Import
-      import_cpsbc(year1, setNo);
-   end
-   return;
-end
+% Diagnostic data report (last year has no wage data; omit it)
+stats_cpsbc.data_report(cS.yearV(1 : (end-1)), setName);
 
-
-% ****  Create derived individual variables
-   
-if 0
-   for year1 = yearV(:)'
-      school_create_cpsbc(year1, setNo);   
-   end
-   
-   wage_create_cpsbc(yearV, setNo);
-   diagnostics_cpsbc.data_report(yearV, setNo);
-   return;
-end % for year1
 
 
 %%  Summary variables
 
 % Stats by [age, school, year]
-age_school_year_stats_cpsbc(setNo);
+sS = stats_cpsbc.AgeSchoolYearStats(setName);
+sS.compute_stats;
+var_save_cpsbc(sS, 'ageSchoolYearStats', [], setName);
+
+return; % +++++
+
 
 % Estimate earnings regressions, using median and mean log
 regr_earn_age_year_cpsbc(setNo);

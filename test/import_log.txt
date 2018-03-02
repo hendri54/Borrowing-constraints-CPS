@@ -1,0 +1,422 @@
+
+Importing raw data 
+  4172 k observations, 29 variables 
+
+Number of observations in each year: 
+
+ans =
+
+  56×20 <a href="matlab:helpPopup table" style="font-weight:bold">table</a>
+
+            <strong>year</strong><strong>    GroupCount</strong><strong>     Fun1_age </strong><strong>    Fun1_ahrsworkt</strong><strong>    Fun1_asecwt</strong><strong>    Fun1_classwkr</strong><strong>    Fun1_educ </strong><strong>    Fun1_educ99</strong><strong>    Fun1_empstat</strong><strong>     Fun1_gq  </strong><strong>    Fun1_higrade</strong><strong>    Fun1_incbus</strong><strong>    Fun1_incwage</strong><strong>    Fun1_labforce</strong><strong>    Fun1_race </strong><strong>    Fun1_schlcoll</strong><strong>     Fun1_sex </strong><strong>    Fun1_wkswork1</strong><strong>    Fun1_wkswork2</strong><strong>    Fun1_year </strong>
+            <strong>____</strong>    <strong>__________</strong>    <strong>__________</strong>    <strong>______________</strong>    <strong>___________</strong>    <strong>_____________</strong>    <strong>__________</strong>    <strong>___________</strong>    <strong>____________</strong>    <strong>__________</strong>    <strong>____________</strong>    <strong>___________</strong>    <strong>____________</strong>    <strong>_____________</strong>    <strong>__________</strong>    <strong>_____________</strong>    <strong>__________</strong>    <strong>_____________</strong>    <strong>_____________</strong>    <strong>__________</strong>
+
+    <strong>1962</strong>    1962         38186         38186         38186             38186          38186            38186             0          38186               0    38186                38186          38186           38186            38186             0            38186             0            38186            38186
+    <strong>1963</strong>    1963         29915         29915         29915             29915          29915                0             0          29915               0        0                29915          29915           29915            29915             0            29915             0            29915            29915
+    <strong>1964</strong>    1964         28935         28935         28935             28935          28935            28935             0          28935               0    28935                28935          28935           28935            28935             0            28935             0            28935            28935
+    <strong>1965</strong>    1965         28938         28938         28938             28938          28938            28938             0          28938               0    28938                28938          28938           28938            28938             0            28938             0            28938            28938
+    <strong>1966</strong>    1966         58980         58980         58980             58980          58980            58980             0          58980               0    58980                58980          58980           58980            58980             0            58980             0            58980            58980
+    <strong>1967</strong>    1967         37168         37168         37168             37168          37168            37168             0          37168               0    37168                37168          37168           37168            37168             0            37168             0            37168            37168
+    <strong>1968</strong>    1968         58616         58616         58616             58616          58616            58616             0          58616           58616    58616                58616          58616           58616            58616             0            58616             0            58616            58616
+    <strong>1969</strong>    1969         59832         59832         59832             59832          59832            59832             0          59832           59832    59832                59832          59832           59832            59832             0            59832             0            59832            59832
+    <strong>1970</strong>    1970         57483         57483         57483             57483          57483            57483             0          57483           57483    57483                57483          57483           57483            57483             0            57483             0            57483            57483
+    <strong>1971</strong>    1971         58206         58206         58206             58206          58206            58206             0          58206           58206    58206                58206          58206           58206            58206             0            58206             0            58206            58206
+    <strong>1972</strong>    1972         56908         56908         56908             56908          56908            56908             0          56908           56908    56908                56908          56908           56908            56908             0            56908             0            56908            56908
+    <strong>1973</strong>    1973         56198         56198         56198             56198          56198            56198             0          56198           56198    56198                56198          56198           56198            56198             0            56198             0            56198            56198
+    <strong>1974</strong>    1974         55545         55545         55545             55545          55545            55545             0          55545           55545    55545                55545          55545           55545            55545             0            55545             0            55545            55545
+    <strong>1975</strong>    1975         54991         54991         54991             54991          54991            54991             0          54991           54991    54991                54991          54991           54991            54991             0            54991             0            54991            54991
+    <strong>1976</strong>    1976         57524         57524         57524             57524          57524            57524             0          57524           57524    57524                57524          57524           57524            57524             0            57524         57524            57524            57524
+    <strong>1977</strong>    1977         69916         69916         69916             69916          69916            69916             0          69916           69916    69916                69916          69916           69916            69916             0            69916         69916            69916            69916
+    <strong>1978</strong>    1978         69128         69128         69128             69128          69128            69128             0          69128           69128    69128                69128          69128           69128            69128             0            69128         69128            69128            69128
+    <strong>1979</strong>    1979         70091         70091         70091             70091          70091            70091             0          70091           70091    70091                70091          70091           70091            70091             0            70091         70091            70091            70091
+    <strong>1980</strong>    1980         83359         83359         83359             83359          83359            83359             0          83359           83359    83359                83359          83359           83359            83359             0            83359         83359            83359            83359
+    <strong>1981</strong>    1981         84152         84152         84152             84152          84152            84152             0          84152           84152    84152                84152          84152           84152            84152             0            84152         84152            84152            84152
+    <strong>1982</strong>    1982         75330         75330         75330             75330          75330            75330             0          75330           75330    75330                75330          75330           75330            75330             0            75330         75330            75330            75330
+    <strong>1983</strong>    1983         75429         75429         75429             75429          75429            75429             0          75429           75429    75429                75429          75429           75429            75429             0            75429         75429            75429            75429
+    <strong>1984</strong>    1984         75442         75442         75442             75442          75442            75442             0          75442           75442    75442                75442          75442           75442            75442             0            75442         75442            75442            75442
+    <strong>1985</strong>    1985         76500         76500         76500             76500          76500            76500             0          76500           76500    76500                76500          76500           76500            76500             0            76500         76500            76500            76500
+    <strong>1986</strong>    1986         74991         74991         74991             74991          74991            74991             0          74991           74991    74991                74991          74991           74991            74991         74991            74991         74991            74991            74991
+    <strong>1987</strong>    1987         74770         74770         74770             74770          74770            74770             0          74770           74770    74770                74770          74770           74770            74770         74770            74770         74770            74770            74770
+    <strong>1988</strong>    1988         75037         75037         75037             75037          75037            75037             0          75037           75037    75037                75037          75037           75037            75037         75037            75037         75037            75037            75037
+    <strong>1989</strong>    1989         70300         70300         70300             70300          70300            70300             0          70300           70300    70300                70300          70300           70300            70300         70300            70300         70300            70300            70300
+    <strong>1990</strong>    1990         76915         76915         76915             76915          76915            76915             0          76915           76915    76915                76915          76915           76915            76915         76915            76915         76915            76915            76915
+    <strong>1991</strong>    1991         76485         76485         76485             76485          76485            76485             0          76485           76485    76485                76485          76485           76485            76485         76485            76485         76485            76485            76485
+    <strong>1992</strong>    1992         75401         75401         75401             75401          75401            75401         75401          75401           75401        0                75401          75401           75401            75401         75401            75401         75401            75401            75401
+    <strong>1993</strong>    1993         74563         74563         74563             74563          74563            74563         74563          74563           74563        0                74563          74563           74563            74563         74563            74563         74563            74563            74563
+    <strong>1994</strong>    1994         72348         72348         72348             72348          72348            72348         72348          72348           72348        0                72348          72348           72348            72348         72348            72348         72348            72348            72348
+    <strong>1995</strong>    1995         72356         72356         72356             72356          72356            72356         72356          72356           72356        0                72356          72356           72356            72356         72356            72356         72356            72356            72356
+    <strong>1996</strong>    1996         63103         63103         63103             63103          63103            63103         63103          63103           63103        0                63103          63103           63103            63103         63103            63103         63103            63103            63103
+    <strong>1997</strong>    1997         64609         64609         64609             64609          64609            64609         64609          64609           64609        0                64609          64609           64609            64609         64609            64609         64609            64609            64609
+    <strong>1998</strong>    1998         64971         64971         64971             64971          64971            64971         64971          64971           64971        0                64971          64971           64971            64971         64971            64971         64971            64971            64971
+    <strong>1999</strong>    1999         65384         65384         65384             65384          65384            65384         65384          65384           65384        0                65384          65384           65384            65384         65384            65384         65384            65384            65384
+    <strong>2000</strong>    2000         66780         66780         66780             66780          66780            66780         66780          66780           66780        0                66780          66780           66780            66780         66780            66780         66780            66780            66780
+    <strong>2001</strong>    2001    1.0735e+05    1.0735e+05    1.0735e+05        1.0735e+05     1.0735e+05       1.0735e+05    1.0735e+05     1.0735e+05      1.0735e+05        0           1.0735e+05     1.0735e+05      1.0735e+05       1.0735e+05    1.0735e+05       1.0735e+05    1.0735e+05       1.0735e+05       1.0735e+05
+    <strong>2002</strong>    2002    1.0621e+05    1.0621e+05    1.0621e+05        1.0621e+05     1.0621e+05       1.0621e+05    1.0621e+05     1.0621e+05      1.0621e+05        0           1.0621e+05     1.0621e+05      1.0621e+05       1.0621e+05    1.0621e+05       1.0621e+05    1.0621e+05       1.0621e+05       1.0621e+05
+    <strong>2003</strong>    2003    1.0521e+05    1.0521e+05    1.0521e+05        1.0521e+05     1.0521e+05       1.0521e+05    1.0521e+05     1.0521e+05      1.0521e+05        0           1.0521e+05     1.0521e+05      1.0521e+05       1.0521e+05    1.0521e+05       1.0521e+05    1.0521e+05       1.0521e+05       1.0521e+05
+    <strong>2004</strong>    2004    1.0343e+05    1.0343e+05    1.0343e+05        1.0343e+05     1.0343e+05       1.0343e+05    1.0343e+05     1.0343e+05      1.0343e+05        0           1.0343e+05     1.0343e+05      1.0343e+05       1.0343e+05    1.0343e+05       1.0343e+05    1.0343e+05       1.0343e+05       1.0343e+05
+    <strong>2005</strong>    2005    1.0199e+05    1.0199e+05    1.0199e+05        1.0199e+05     1.0199e+05       1.0199e+05    1.0199e+05     1.0199e+05      1.0199e+05        0           1.0199e+05     1.0199e+05      1.0199e+05       1.0199e+05    1.0199e+05       1.0199e+05    1.0199e+05       1.0199e+05       1.0199e+05
+    <strong>2006</strong>    2006    1.0154e+05    1.0154e+05    1.0154e+05        1.0154e+05     1.0154e+05       1.0154e+05    1.0154e+05     1.0154e+05      1.0154e+05        0           1.0154e+05     1.0154e+05      1.0154e+05       1.0154e+05    1.0154e+05       1.0154e+05    1.0154e+05       1.0154e+05       1.0154e+05
+    <strong>2007</strong>    2007     1.011e+05     1.011e+05     1.011e+05         1.011e+05      1.011e+05        1.011e+05     1.011e+05      1.011e+05       1.011e+05        0            1.011e+05      1.011e+05       1.011e+05        1.011e+05     1.011e+05        1.011e+05     1.011e+05        1.011e+05        1.011e+05
+    <strong>2008</strong>    2008    1.0117e+05    1.0117e+05    1.0117e+05        1.0117e+05     1.0117e+05       1.0117e+05    1.0117e+05     1.0117e+05      1.0117e+05        0           1.0117e+05     1.0117e+05      1.0117e+05       1.0117e+05    1.0117e+05       1.0117e+05    1.0117e+05       1.0117e+05       1.0117e+05
+    <strong>2009</strong>    2009    1.0138e+05    1.0138e+05    1.0138e+05        1.0138e+05     1.0138e+05       1.0138e+05    1.0138e+05     1.0138e+05      1.0138e+05        0           1.0138e+05     1.0138e+05      1.0138e+05       1.0138e+05    1.0138e+05       1.0138e+05    1.0138e+05       1.0138e+05       1.0138e+05
+    <strong>2010</strong>    2010    1.0172e+05    1.0172e+05    1.0172e+05        1.0172e+05     1.0172e+05       1.0172e+05    1.0172e+05     1.0172e+05      1.0172e+05        0           1.0172e+05     1.0172e+05      1.0172e+05       1.0172e+05    1.0172e+05       1.0172e+05    1.0172e+05       1.0172e+05       1.0172e+05
+    <strong>2011</strong>    2011         98770         98770         98770             98770          98770            98770         98770          98770           98770        0                98770          98770           98770            98770         98770            98770         98770            98770            98770
+    <strong>2012</strong>    2012         96734         96734         96734             96734          96734            96734         96734          96734           96734        0                96734          96734           96734            96734         96734            96734         96734            96734            96734
+    <strong>2013</strong>    2013         96575         96575         96575             96575          96575            96575         96575          96575           96575        0                96575          96575           96575            96575         96575            96575         96575            96575            96575
+    <strong>2014</strong>    2014         94895         94895         94895             94895          94895            94895         94895          94895           94895        0                94895          94895           94895            94895         94895            94895         94895            94895            94895
+    <strong>2015</strong>    2015         93723         93723         93723             93723          93723            93723         93723          93723           93723        0                93723          93723           93723            93723         93723            93723         93723            93723            93723
+    <strong>2016</strong>    2016         87301         87301         87301             87301          87301            87301         87301          87301           87301        0                87301          87301           87301            87301         87301            87301         87301            87301            87301
+    <strong>2017</strong>    2017         87724         87724         87724             87724          87724            87724         87724          87724           87724        0                87724          87724           87724            87724         87724            87724         87724            87724            87724
+
+
+Recoding and making derived variables
+incwage.  Max value 1962:    99900.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 1963:    60000.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 1964:    99900.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 1965:    99900.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 1966:    99900.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 1967:    99900.  Occurs 1 times (  0.0 pct). 
+incwage.  Top code 1968:     50000.  Occurs 38 times (  0.0 pct). 
+incwage.  Top code 1969:     50000.  Occurs 31 times (  0.0 pct). 
+incwage.  Top code 1970:     50000.  Occurs 46 times (  0.0 pct). 
+incwage.  Top code 1971:     50000.  Occurs 71 times (  0.0 pct). 
+incwage.  Top code 1972:     50000.  Occurs 68 times (  0.0 pct). 
+incwage.  Top code 1973:     50000.  Occurs 116 times (  0.0 pct). 
+incwage.  Top code 1974:     50000.  Occurs 120 times (  0.0 pct). 
+incwage.  Top code 1975:     50000.  Occurs 149 times (  0.0 pct). 
+incwage.  Top code 1976:     50000.  Occurs 202 times (  0.0 pct). 
+incwage.  Top code 1977:     50000.  Occurs 294 times (  0.0 pct). 
+incwage.  Top code 1978:     50000.  Occurs 354 times (  0.0 pct). 
+incwage.  Top code 1979:     50000.  Occurs 457 times (  0.0 pct). 
+incwage.  Top code 1980:     50000.  Occurs 762 times (  0.0 pct). 
+incwage.  Top code 1981:     50000.  Occurs 982 times (  0.0 pct). 
+incwage.  Top code 1982:     75000.  Occurs 316 times (  0.0 pct). 
+incwage.  Top code 1983:     75000.  Occurs 432 times (  0.0 pct). 
+incwage.  Top code 1984:     75000.  Occurs 455 times (  0.0 pct). 
+incwage.  Top code 1985:     99999.  Occurs 255 times (  0.0 pct). 
+incwage.  Top code 1986:     99999.  Occurs 305 times (  0.0 pct). 
+incwage.  Top code 1987:     99999.  Occurs 402 times (  0.0 pct). 
+incwage.  Max value 1988:   169000.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 1989:   186999.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 1990:   199998.  Occurs 2 times (  0.0 pct). 
+incwage.  Max value 1991:   180000.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 1992:   199998.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 1993:   193999.  Occurs 1 times (  0.0 pct). 
+incwage.  Top code 1994:    199998.  Occurs 6 times (  0.0 pct). 
+incwage.  Top code 1995:    199998.  Occurs 11 times (  0.0 pct). 
+incwage.  Top code 1996:    576372.  Occurs 7 times (  0.0 pct). 
+incwage.  Top code 1997:    454816.  Occurs 11 times (  0.0 pct). 
+incwage.  Top code 1998:    442040.  Occurs 6 times (  0.0 pct). 
+incwage.  Top code 1999:    492657.  Occurs 6 times (  0.0 pct). 
+incwage.  Max value 2000:   364302.  Occurs 1 times (  0.0 pct). 
+incwage.  Top code 2001:    469588.  Occurs 9 times (  0.0 pct). 
+incwage.  Max value 2002:   494562.  Occurs 1 times (  0.0 pct). 
+incwage.  Top code 2003:    595494.  Occurs 6 times (  0.0 pct). 
+incwage.  Top code 2004:    556932.  Occurs 11 times (  0.0 pct). 
+incwage.  Max value 2005:   748263.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 2006:   607643.  Occurs 2 times (  0.0 pct). 
+incwage.  Max value 2007:   625221.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 2008:   706117.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 2009:   561087.  Occurs 1 times (  0.0 pct). 
+incwage.  Top code 2010:    567699.  Occurs 5 times (  0.0 pct). 
+incwage.  Max value 2011:  1699999.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 2012:  1199999.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 2013:  1349999.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 2014:  1399999.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 2015:  1399999.  Occurs 2 times (  0.0 pct). 
+incwage.  Max value 2016:  1259999.  Occurs 1 times (  0.0 pct). 
+incwage.  Max value 2017:  1299999.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1962:    99900.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1963:    60000.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1964:    80000.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1965:    98200.  Occurs 1 times (  0.0 pct). 
+incbus.  Top code 1966:     99900.  Occurs 5 times (  0.0 pct). 
+incbus.  Max value 1967:    90000.  Occurs 1 times (  0.0 pct). 
+incbus.  Top code 1968:     50000.  Occurs 13 times (  0.0 pct). 
+incbus.  Top code 1969:     50000.  Occurs 35 times (  0.0 pct). 
+incbus.  Top code 1970:     50000.  Occurs 40 times (  0.0 pct). 
+incbus.  Top code 1971:     50000.  Occurs 44 times (  0.0 pct). 
+incbus.  Top code 1972:     50000.  Occurs 63 times (  0.0 pct). 
+incbus.  Top code 1973:     50000.  Occurs 66 times (  0.0 pct). 
+incbus.  Top code 1974:     50000.  Occurs 72 times (  0.0 pct). 
+incbus.  Top code 1975:     50000.  Occurs 63 times (  0.0 pct). 
+incbus.  Top code 1976:     50000.  Occurs 94 times (  0.0 pct). 
+incbus.  Top code 1977:     50000.  Occurs 137 times (  0.0 pct). 
+incbus.  Top code 1978:     50000.  Occurs 156 times (  0.0 pct). 
+incbus.  Top code 1979:     50000.  Occurs 220 times (  0.0 pct). 
+incbus.  Top code 1980:     50000.  Occurs 239 times (  0.0 pct). 
+incbus.  Top code 1981:     50000.  Occurs 229 times (  0.0 pct). 
+incbus.  Top code 1982:     75000.  Occurs 86 times (  0.0 pct). 
+incbus.  Top code 1983:     75000.  Occurs 111 times (  0.0 pct). 
+incbus.  Top code 1984:     75000.  Occurs 138 times (  0.0 pct). 
+incbus.  Top code 1985:     99999.  Occurs 84 times (  0.0 pct). 
+incbus.  Top code 1986:     99999.  Occurs 75 times (  0.0 pct). 
+incbus.  Top code 1987:     99999.  Occurs 98 times (  0.0 pct). 
+incbus.  Max value 1988:   129999.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1989:   119999.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1990:   131999.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1991:   179999.  Occurs 2 times (  0.0 pct). 
+incbus.  Max value 1992:   127999.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1993:   184999.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1994:   155000.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1995:   144999.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1996:   464782.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1997:   419160.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1998:   442040.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 1999:   419044.  Occurs 4 times (  0.0 pct). 
+incbus.  Max value 2000:   362302.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 2001:   469588.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 2002:   432853.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 2003:   562913.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 2004:   520705.  Occurs 3 times (  0.0 pct). 
+incbus.  Max value 2005:   502982.  Occurs 1 times (  0.0 pct). 
+incbus.  Top code 2006:    543488.  Occurs 5 times (  0.0 pct). 
+incbus.  Max value 2007:   619221.  Occurs 2 times (  0.0 pct). 
+incbus.  Max value 2008:   496759.  Occurs 3 times (  0.0 pct). 
+incbus.  Max value 2009:   553087.  Occurs 1 times (  0.0 pct). 
+incbus.  Max value 2010:   493804.  Occurs 1 times (  0.0 pct). 
+incbus.  Top code 2011:   1099999.  Occurs 8 times (  0.0 pct). 
+incbus.  Max value 2012:  1099999.  Occurs 2 times (  0.0 pct). 
+incbus.  Max value 2013:  1099999.  Occurs 4 times (  0.0 pct). 
+incbus.  Max value 2014:  1099999.  Occurs 4 times (  0.0 pct). 
+incbus.  Max value 2015:  1099999.  Occurs 4 times (  0.0 pct). 
+incbus.  Top code 2016:   1099999.  Occurs 8 times (  0.0 pct). 
+incbus.  Max value 2017:  1099999.  Occurs 2 times (  0.0 pct). 
+    Making weekly wage
+    Years with data: 1962 - 2017 
+    Recoding done
+
+Filtering
+N before filter:     4,171,615
+N after year filter:  3,899,554
+  year range 1965 - 2015 
+N after sex filter:  2,134,137
+  year range 1965 - 2015 
+N after age filter:  2,112,057
+  year range 1965 - 2015 
+N after gq filter:  2,109,626
+  year range 1965 - 2015 
+N after empstat filter:  1,905,562
+  year range 1965 - 2015 
+N after labforce filter:  1,905,562
+  year range 1965 - 2015 
+N after classwkr filter:  1,665,168
+  year range 1965 - 2015 
+N after earnings filter:  1,635,303
+  year range 1965 - 2015 
+N after wage filter:  1,633,341
+  year range 1965 - 2015 
+N after hours filter:  1,470,932
+  year range 1965 - 2015 
+N after weeks filter:  1,408,282
+  year range 1965 - 2015 
+N after school filter:  1,404,449
+  year range 1965 - 2015 
+N after weight filter:  1,404,259
+  year range 1965 - 2015 
+N after wage outlier filter:  1,368,784
+  year range 1965 - 2014 
+<a href="matlab: opentoline('/Users/lutz/Dropbox/hc/borrow_constraints/cps/progs/+import_cpsbc/DataMatrix.m',228,1)">228 </a>      assert(isequal(unique(m.year),  cS.wageYearV(:)),  'Not all years have data');
+unique(m.year)
+
+ans =
+
+  50×1 <a href="matlab:helpPopup single" style="font-weight:bold">single</a> column vector
+
+        1965
+        1966
+        1967
+        1968
+        1969
+        1970
+        1971
+        1972
+        1973
+        1974
+        1975
+        1976
+        1977
+        1978
+        1979
+        1980
+        1981
+        1982
+        1983
+        1984
+        1985
+        1986
+        1987
+        1988
+        1989
+        1990
+        1991
+        1992
+        1993
+        1994
+        1995
+        1996
+        1997
+        1998
+        1999
+        2000
+        2001
+        2002
+        2003
+        2004
+        2005
+        2006
+        2007
+        2008
+        2009
+        2010
+        2011
+        2012
+        2013
+        2014
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+cS = const_cpsbc('test');
+setName = 'test';
+stats_cpsbc.data_report(cS.yearV(1 : (end-1)), setName);
+<a href="matlab: opentoline('/Users/lutz/Dropbox/hc/borrow_constraints/cps/progs/+stats_cpsbc/data_report.m',70,1)">70  </a>validateattributes(nObsV, {'double'}, {'finite', 'nonnan', 'nonempty', 'real', '>', 5000})
+nObsV'
+
+ans =
+
+  Columns 1 through 11
+
+       11828       25406       16089       25012       25319       24257       23798       23126       22816       22626       20917
+
+  Columns 12 through 22
+
+       21832       26458       26379       26842       31042       30896       26745       25735       26249       27381       27204
+
+  Columns 23 through 33
+
+       26992       26312       24617       26957       26086       25321       24837       24148       24722       21716       22311
+
+  Columns 34 through 44
+
+       22698       23353       24125       38357       37063       36352       35725       35478       35599       35608       35533
+
+  Columns 45 through 50
+
+       33384       32623       32535       32363       33145       32867
+
+dbcont
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stats_cpsbc.data_report', '/Users/lutz/Dropbox/hc/borrow_constraints/cps/progs/+stats_cpsbc/data_report.m', 74)" style="font-weight:bold">stats_cpsbc.data_report</a> (<a href="matlab: opentoline('/Users/lutz/Dropbox/hc/borrow_constraints/cps/progs/+stats_cpsbc/data_report.m',74,0)">line 74</a>)
+Expected input to be finite.
+} 
+dbstop error
+stats_cpsbc.data_report(cS.yearV(1 : (end-1)), setName);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stats_cpsbc.data_report', '/Users/lutz/Dropbox/hc/borrow_constraints/cps/progs/+stats_cpsbc/data_report.m', 49)" style="font-weight:bold">stats_cpsbc.data_report</a> (<a href="matlab: opentoline('/Users/lutz/Dropbox/hc/borrow_constraints/cps/progs/+stats_cpsbc/data_report.m',49,0)">line 49</a>)
+Expected input to be an array with all of the values > 5.
+} 
+<a href="matlab: opentoline('/Users/lutz/Dropbox/hc/borrow_constraints/cps/progs/+stats_cpsbc/data_report.m',49,1)">49  </a>   validateattributes(m.yrSchool(yIdxV), {'double'}, {'finite', 'nonnan', 'nonempty', 'real', '>', 5, ...
+stats_cpsbc.data_report(cS.yearV(1 : (end-1)), setName);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stats_cpsbc.data_report', '/Users/lutz/Dropbox/hc/borrow_constraints/cps/progs/+stats_cpsbc/data_report.m', 49)" style="font-weight:bold">stats_cpsbc.data_report</a> (<a href="matlab: opentoline('/Users/lutz/Dropbox/hc/borrow_constraints/cps/progs/+stats_cpsbc/data_report.m',49,0)">line 49</a>)
+Expected input to be finite.
+} 
+<a href="matlab: opentoline('/Users/lutz/Dropbox/hc/borrow_constraints/cps/progs/+stats_cpsbc/data_report.m',49,1)">49  </a>   validateattributes(m.yrSchool(yIdxV), {'double'}, {'finite', 'nonnan', 'nonempty', 'real', '>=', 0, ...
+size(yIdxV)
+
+ans =
+
+       23798           1
+
+sum(isnan(m.yrSchool(yIdxV)))
+
+ans =
+
+     1
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+dmS.filter
+
+Filtering
+N before filter:     1,368,784
+N after year filter:  1,368,784
+  year range 1965 - 2014 
+N after sex filter:  1,368,784
+  year range 1965 - 2014 
+N after age filter:  1,368,784
+  year range 1965 - 2014 
+N after gq filter:  1,368,784
+  year range 1965 - 2014 
+N after empstat filter:  1,368,784
+  year range 1965 - 2014 
+N after labforce filter:  1,368,784
+  year range 1965 - 2014 
+N after classwkr filter:  1,368,784
+  year range 1965 - 2014 
+N after earnings filter:  1,368,784
+  year range 1965 - 2014 
+N after wage filter:  1,368,784
+  year range 1965 - 2014 
+N after hours filter:  1,368,784
+  year range 1965 - 2014 
+N after weeks filter:  1,368,784
+  year range 1965 - 2014 
+N after school filter:  1,368,782
+  year range 1965 - 2014 
+N after weight filter:  1,368,782
+  year range 1965 - 2014 
+    No positive weights for year 1964 
+N after wage outlier filter:  1,367,891
+  year range 1965 - 2014 
+stats_cpsbc.data_report(cS.yearV(1 : (end-1)), setName);
+
+----------------------------------------------------------------------------
+         N (k)   Age  Hours  Weeks  School  CgFrac    Wage  TopCode  FracTop
+----------------------------------------------------------------------------
+   1965     12  40.4   45.1   49.7    11.3    0.14   827.5    99900    0.000
+   1966     25  40.2   45.5   49.7    11.3    0.14   860.6    99900    0.000
+   1967     16  40.3   45.2   49.9    11.4    0.14   887.7    99900    0.000
+   1968     25  40.3   45.1   49.9    11.5    0.15   896.1    75000    0.001
+   1969     25  40.3   45.0   49.9    11.6    0.15   925.7    75000    0.001
+   1970     24  40.3   44.9   49.9    11.7    0.15   955.3    75000    0.002
+   1971     24  40.1   44.6   49.7    11.8    0.16   978.3    75000    0.002
+   1972     23  39.8   44.7   49.7    11.9    0.17   966.3    75000    0.002
+   1973     23  39.3   45.1   49.8    12.1    0.17  1022.9    75000    0.004
+   1974     23  39.0   44.7   49.8    12.2    0.18  1011.1    75000    0.005
+   1975     21  39.0   44.2   49.8    12.4    0.20   988.7    75000    0.006
+   1976     22  38.9   44.4   49.5    12.5    0.21   953.7    75000    0.008
+   1977     26  38.6   44.8   49.6    12.5    0.22   976.9    75000    0.010
+   1978     26  38.4   44.8   49.6    12.6    0.22   987.8    75000    0.012
+   1979     27  38.2   44.8   49.6    12.7    0.22   983.7    75000    0.016
+   1980     31  38.2   44.4   49.8    12.8    0.23   989.4    75000    0.022
+   1981     31  38.1   44.3   49.7    12.8    0.24   934.0    75000    0.028
+   1982     27  38.2   44.1   49.8    12.9    0.25   940.7   112500    0.011
+   1983     26  38.4   44.2   49.7    13.1    0.28   894.3   112500    0.016
+   1984     26  38.2   44.7   49.7    13.1    0.27   901.5   112500    0.017
+   1985     27  38.1   45.0   49.8    13.1    0.27   921.8   149998    0.009
+   1986     27  37.9   44.9   49.8    13.2    0.27   925.9   149998    0.010
+   1987     27  38.0   45.1   49.8    13.2    0.27   953.3   149998    0.014
+   1988     26  37.6   44.9   49.8    13.1    0.27   922.1   155458    0.000
+   1989     25  37.7   45.0   49.9    13.1    0.27   903.6   131000    0.000
+   1990     27  37.9   44.9   49.9    13.2    0.27   896.5   199998    0.000
+   1991     26  38.1   44.6   49.9    13.2    0.27   883.3   180000    0.000
+   1992     25  38.4   44.8   49.8    13.2    0.27   879.0   199998    0.000
+   1993     25  38.4   45.0   49.9    13.3    0.27   883.8   193999    0.000
+   1994     24  38.3   45.1   50.0    13.3    0.28   857.4   299997    0.000
+   1995     25  38.4   45.2   50.0    13.3    0.28   847.1   299997    0.000
+   1996     22  38.6   45.1   50.1    13.3    0.28   841.7   464782    0.000
+   1997     22  38.9   45.2   50.1    13.3    0.28   842.3   682224    0.000
+   1998     23  39.0   45.2   50.1    13.3    0.28   852.5   418608    0.000
+   1999     23  39.2   45.1   50.2    13.3    0.29   891.8   738986    0.000
+   2000     24  39.3   45.1   50.2    13.3    0.29   898.2   364302    0.000
+   2001     38  39.5   44.7   50.3    13.4    0.29   881.7   386378    0.000
+   2002     37  39.9   44.5   50.2    13.4    0.30   893.3   432853    0.000
+   2003     36  39.9   44.5   50.3    13.4    0.31   896.9   562913    0.000
+   2004     36  40.2   44.4   50.3    13.4    0.31   906.2   494457    0.000
+   2005     35  40.3   44.4   50.3    13.4    0.30   905.4   713263    0.000
+   2006     36  40.4   44.4   50.3    13.4    0.30   875.7   607643    0.000
+   2007     36  40.4   44.6   50.3    13.4    0.31   848.3   625221    0.000
+   2008     36  40.8   44.3   50.3    13.5    0.32   866.1   492998    0.000
+   2009     33  41.2   43.8   50.3    13.6    0.34   893.6   561087    0.000
+   2010     33  41.7   43.9   50.2    13.7    0.35   896.8   476595    0.000
+   2011     33  41.9   43.9   50.2    13.7    0.35   882.4  1699999    0.000
+   2012     32  41.8   43.8   50.2    13.7    0.35   855.4  1199999    0.000
+   2013     33  41.7   43.9   50.2    13.7    0.35   856.6  1349999    0.000
+   2014     33  41.8   43.8   50.3    13.8    0.35   862.6  1107999    0.000
+----------------------------------------------------------------------------

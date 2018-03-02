@@ -1,0 +1,493 @@
+Description: cps for borrowing constraints
+Samples selected:
+      IPUMS-CPS, ASEC 1962                              regular
+      IPUMS-CPS, ASEC 1963                              regular
+      IPUMS-CPS, ASEC 1964                              regular
+      IPUMS-CPS, ASEC 1965                              regular
+      IPUMS-CPS, ASEC 1966                              regular
+      IPUMS-CPS, ASEC 1967                              regular
+      IPUMS-CPS, ASEC 1968                              regular
+      IPUMS-CPS, ASEC 1969                              regular
+      IPUMS-CPS, ASEC 1970                              regular
+      IPUMS-CPS, ASEC 1971                              regular
+      IPUMS-CPS, ASEC 1972                              regular
+      IPUMS-CPS, ASEC 1973                              regular
+      IPUMS-CPS, ASEC 1974                              regular
+      IPUMS-CPS, ASEC 1975                              regular
+      IPUMS-CPS, ASEC 1976                              regular
+      IPUMS-CPS, ASEC 1977                              regular
+      IPUMS-CPS, ASEC 1978                              regular
+      IPUMS-CPS, ASEC 1979                              regular
+      IPUMS-CPS, ASEC 1980                              regular
+      IPUMS-CPS, ASEC 1981                              regular
+      IPUMS-CPS, ASEC 1982                              regular
+      IPUMS-CPS, ASEC 1983                              regular
+      IPUMS-CPS, ASEC 1984                              regular
+      IPUMS-CPS, ASEC 1985                              regular
+      IPUMS-CPS, ASEC 1986                              regular
+      IPUMS-CPS, ASEC 1987                              regular
+      IPUMS-CPS, ASEC 1988                              regular
+      IPUMS-CPS, ASEC 1989                              regular
+      IPUMS-CPS, ASEC 1990                              regular
+      IPUMS-CPS, ASEC 1991                              regular
+      IPUMS-CPS, ASEC 1992                              regular
+      IPUMS-CPS, ASEC 1993                              regular
+      IPUMS-CPS, ASEC 1994                              regular
+      IPUMS-CPS, ASEC 1995                              regular
+      IPUMS-CPS, ASEC 1996                              regular
+      IPUMS-CPS, ASEC 1997                              regular
+      IPUMS-CPS, ASEC 1998                              regular
+      IPUMS-CPS, ASEC 1999                              regular
+      IPUMS-CPS, ASEC 2000                              regular
+      IPUMS-CPS, ASEC 2001                              regular
+      IPUMS-CPS, ASEC 2002                              regular
+      IPUMS-CPS, ASEC 2003                              regular
+      IPUMS-CPS, ASEC 2004                              regular
+      IPUMS-CPS, ASEC 2005                              regular
+      IPUMS-CPS, ASEC 2006                              regular
+      IPUMS-CPS, ASEC 2007                              regular
+      IPUMS-CPS, ASEC 2008                              regular
+      IPUMS-CPS, ASEC 2009                              regular
+      IPUMS-CPS, ASEC 2010                              regular
+      IPUMS-CPS, ASEC 2011                              regular
+      IPUMS-CPS, ASEC 2012                              regular
+      IPUMS-CPS, ASEC 2013                              regular
+      IPUMS-CPS, ASEC 2014                              regular
+      IPUMS-CPS, ASEC 2015                              regular
+      IPUMS-CPS, ASEC 2016                              regular
+      IPUMS-CPS, ASEC 2017                              regular
+File Type:                    rectangular
+Case Selection:               Yes
+  Variable               Columns        Len    03/1962 03/1963 03/1964 03/1965 03/1966 03/1967 03/1968 03/1969 03/1970 03/1971 03/1972 03/1973 03/1974 03/1975 03/1976 03/1977 03/1978 03/1979 03/1980 03/1981 03/1982 03/1983 03/1984 03/1985 03/1986 03/1987 03/1988 03/1989 03/1990 03/1991 03/1992 03/1993 03/1994 03/1995 03/1996 03/1997 03/1998 03/1999 03/2000 03/2001 03/2002 03/2003 03/2004 03/2005 03/2006 03/2007 03/2008 03/2009 03/2010 03/2011 03/2012 03/2013 03/2014 03/2015 03/2016 03/2017
+  YEAR               H   1-4            4      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  SERIAL             H   5-9            5      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  ASECFLAG           H  10              1      .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  HFLAG              H  11              1      .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       .       .       . 
+  MONTH              H  12-13           2      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  CPSID              H  14-27          14      .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  AGE                P  28-29           2      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  SEX                P  30              1      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  RACE               P  31-33           3      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  EMPSTAT            P  34-35           2      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  LABFORCE           P  36              1      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  CLASSWKR           P  37-38           2      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  UHRSWORKT          P  39-41           3      .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  UHRSWORK1          P  42-44           3      .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  AHRSWORKT          P  45-47           3      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  EDUC               P  48-50           3      X       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  HIGRADE            P  51-53           3      X       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       . 
+  EDUC99             P  54-55           2      .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  SCHLCOLL           P  56              1      .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  CPSIDP             P  57-70          14      .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  PERNUM             P  71-72           2      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  EARNWT             P  73-82          10      .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  CLASSWLY           P  83-84           2      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  WKSWORK1           P  85-86           2      .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  WKSWORK2           P  87              1      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  UHRSWORKLY         P  88-90           3      .       .       .       .       .       .       .       .       .       .       .       .       .       .       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  INCTOT             P  91-98           8      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  INCWAGE            P  99-105          7      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+  INCBUS             P 106-112          7      X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X       X 
+
+Variable Availability Key:
+All Years X - available in this sample
+All Years . - not available in this sample
+
+Case Selections:
+P AGE      16 16
+P AGE      17 17
+P AGE      18 18
+P AGE      19 19
+P AGE      20 20
+P AGE      21 21
+P AGE      22 22
+P AGE      23 23
+P AGE      24 24
+P AGE      25 25
+P AGE      26 26
+P AGE      27 27
+P AGE      28 28
+P AGE      29 29
+P AGE      30 30
+P AGE      31 31
+P AGE      32 32
+P AGE      33 33
+P AGE      34 34
+P AGE      35 35
+P AGE      36 36
+P AGE      37 37
+P AGE      38 38
+P AGE      39 39
+P AGE      40 40
+P AGE      41 41
+P AGE      42 42
+P AGE      43 43
+P AGE      44 44
+P AGE      45 45
+P AGE      46 46
+P AGE      47 47
+P AGE      48 48
+P AGE      49 49
+P AGE      50 50
+P AGE      51 51
+P AGE      52 52
+P AGE      53 53
+P AGE      54 54
+P AGE      55 55
+P AGE      56 56
+P AGE      57 57
+P AGE      58 58
+P AGE      59 59
+P AGE      60 60
+P AGE      61 61
+P AGE      62 62
+P AGE      63 63
+P AGE      64 64
+P AGE      65 65
+P AGE      66 66
+P AGE      67 67
+P AGE      68 68
+P AGE      69 69
+
+ ASECFLAG		Flag for ASEC
+1		ASEC
+2		March Basic
+
+ HFLAG		Flag for the 3/8 file 2014
+0		5/8 file
+1		3/8 file
+
+ MONTH		Month
+01		January
+02		February
+03		March
+04		April
+05		May
+06		June
+07		July
+08		August
+09		September
+10		October
+11		November
+12		December
+
+ AGE		Age
+00		Under 1 year
+01		1
+02		2
+03		3
+04		4
+05		5
+06		6
+07		7
+08		8
+09		9
+10		10
+11		11
+12		12
+13		13
+14		14
+15		15
+16		16
+17		17
+18		18
+19		19
+20		20
+21		21
+22		22
+23		23
+24		24
+25		25
+26		26
+27		27
+28		28
+29		29
+30		30
+31		31
+32		32
+33		33
+34		34
+35		35
+36		36
+37		37
+38		38
+39		39
+40		40
+41		41
+42		42
+43		43
+44		44
+45		45
+46		46
+47		47
+48		48
+49		49
+50		50
+51		51
+52		52
+53		53
+54		54
+55		55
+56		56
+57		57
+58		58
+59		59
+60		60
+61		61
+62		62
+63		63
+64		64
+65		65
+66		66
+67		67
+68		68
+69		69
+70		70
+71		71
+72		72
+73		73
+74		74
+75		75
+76		76
+77		77
+78		78
+79		79
+80		80
+81		81
+82		82
+83		83
+84		84
+85		85
+86		86
+87		87
+88		88
+89		89
+90		90 (90+, 1988-2002)
+91		91
+92		92
+93		93
+94		94
+95		95
+96		96
+97		97
+98		98
+99		99+
+
+ SEX		Sex
+1		Male
+2		Female
+9		NIU
+
+ RACE		Race
+100		White
+200		Black/Negro
+300		American Indian/Aleut/Eskimo
+650		Asian or Pacific Islander
+651		Asian only
+652		Hawaiian/Pacific Islander only
+700		Other (single) race, n.e.c.
+		Two or more races
+801		White-Black
+802		White-American Indian
+803		White-Asian
+804		White-Hawaiian/Pacific Islander
+805		Black-American Indian
+806		Black-Asian
+807		Black-Hawaiian/Pacific Islander
+808		American Indian-Asian
+809		Asian-Hawaiian/Pacific Islander
+810		White-Black-American Indian
+811		White-Black-Asian
+812		White-American Indian-Asian
+813		White-Asian-Hawaiian/Pacific Islander
+814		White-Black-American Indian-Asian
+815		American Indian-Hawaiian/Pacific Islander
+816		White-Black--Hawaiian/Pacific Islander
+817		White-American Indian-Hawaiian/Pacific Islander
+818		Black-American Indian-Asian
+819		White-American Indian-Asian-Hawaiian/Pacific Islander
+820		Two or three races, unspecified
+830		Four or five races, unspecified
+999		Blank
+
+ EMPSTAT		Employment status
+00		NIU
+01		Armed Forces
+		In Labor Force
+		Employed
+10		At work
+12		Has job, not at work last week
+20		Unemployed
+21		Unemployed, experienced worker
+22		Unemployed, new worker
+30		Not in labor force
+31		NILF, housework
+32		NILF, unable to work
+33		NILF, school
+34		NILF, other
+35		NILF, unpaid, lt 15 hours
+36		NILF, retired
+
+ LABFORCE		Labor force status
+0		NIU
+1		No, not in the labor force
+2		Yes, in the labor force
+
+ CLASSWKR		Class of worker
+00		NIU
+10		Self-employed
+13		Self-employed, not incorporated
+14		Self-employed, incorporated
+20		Works for wages or salary
+21		Wage/salary, private
+22		Private, for profit
+23		Private, nonprofit
+24		Wage/salary, government
+25		Federal government employee
+26		Armed forces
+27		State government employee
+28		Local government employee
+29		Unpaid family worker
+99		Missing/Unknown
+
+ UHRSWORKT		Hours usually worked per week at all jobs
+997		Hours vary
+999		NIU
+
+ UHRSWORK1		Hours usually worked per week at main job
+000		0 hours
+997		Hours vary
+999		NIU/Missing
+
+ EDUC		Educational attainment recode
+000		NIU or no schooling
+001		NIU or blank
+002		None or preschool
+010		Grades 1, 2, 3, or 4
+011		Grade 1
+012		Grade 2
+013		Grade 3
+014		Grade 4
+020		Grades 5 or 6
+021		Grade 5
+022		Grade 6
+030		Grades 7 or 8
+031		Grade 7
+032		Grade 8
+040		Grade 9
+050		Grade 10
+060		Grade 11
+070		Grade 12
+071		12th grade, no diploma
+072		12th grade, diploma unclear
+073		High school diploma or equivalent
+080		1 year of college
+081		Some college but no degree
+090		2 years of college
+091		Associate's degree, occupational/vocational program
+092		Associate's degree, academic program
+100		3 years of college
+110		4 years of college
+111		Bachelor's degree
+120		5+ years of college
+121		5 years of college
+122		6+ years of college
+123		Master's degree
+124		Professional school degree
+125		Doctorate degree
+999		Missing/Unknown
+
+ HIGRADE		Highest grade of school
+000		NIU
+010		None
+		Elementary school:
+031		Did not finish 1st grade
+040		1st grade
+041		Did not finish 2nd grade
+050		2nd grade
+051		Did not finish 3rd grade
+060		3rd grade
+061		Did not finish 4th grade
+070		4th grade
+071		Did not finish 5th grade
+080		5th grade
+081		Did not finish 6th grade
+090		6th grade
+091		Did not finish 7th grade
+100		7th grade
+101		Did not finish 8th grade
+110		8th grade
+111		Did not finish 9th grade
+		High school:
+120		9th grade
+121		Did not finish 10th grade
+130		10th grade
+131		Did not finish 11th grade
+140		11th grade
+141		Did not finish 12th grade
+150		12th grade
+151		Did not finish 1st year college
+		College:
+160		1st year college
+161		Did not finish 2nd year
+170		2nd year college
+171		Did not finish 3rd year
+180		3rd year college
+181		Did not finish 4th year
+190		4th year college
+191		Did not finish 5th year
+200		5th year college
+201		Did not finish 6th year
+210		6th year college
+999		Missing/Unknown
+
+ EDUC99		Educational attainment, 1990
+00		NIU
+01		No school completed
+04		1st-4th grade
+05		5th-8th grade
+06		9th grade
+07		10th grade
+08		11th grade
+09		12th grade, no diploma
+10		High school graduate, or GED
+11		Some college, no degree
+12		Associate degree, type of program not specified
+13		Associate degree, occupational program
+14		Associate degree, academic program
+15		Bachelors degree
+16		Masters degree
+17		Professional degree
+18		Doctorate degree
+
+ SCHLCOLL		School or college attendance
+0		NIU
+1		High school full time
+2		High school part time
+3		College or university full time
+4		College or university part time
+5		Does not attend school, college or university
+
+ CLASSWLY		Class of worker last year
+00		NIU
+10		Self-employed
+13		Self-employed, not incorporated
+14		Self-employed, incorporated
+20		Works for wages or salary
+22		Wage/salary, private
+24		Wage/salary, government
+25		Federal government employee
+27		State government employee
+28		Local government employee
+29		Unpaid family worker
+99		Missing/Unknown
+
+ WKSWORK2		Weeks worked last year, intervalled
+0		NIU
+1		1-13 weeks
+2		14-26 weeks
+3		27-39 weeks
+4		40-47 weeks
+5		48-49 weeks
+6		50-52 weeks
+9		Missing data

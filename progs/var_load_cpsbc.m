@@ -1,20 +1,19 @@
-function [outV, success] = var_load_cpsbc(varNo, year1, setNo)
+function [outV, success] = var_load_cpsbc(varName, year1, setName)
 % Load a MAT variable
-% ----------------------------------------------
 
 if nargin ~= 3
    error('invalid nargin');
 end
 
-fn = var_fn_cpsbc(varNo, year1, setNo);
+fn = var_fn_cpsbc(varName, year1, setName);
 
 if ~exist(fn, 'file')
    outV = [];
-   success = 0;
+   success = false;
 else
    outV = load(fn);
    outV = outV.outV;
-   success = 1;
+   success = true;
 end
 
 end

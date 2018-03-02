@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \begin_preamble
 \input{/Users/lutz/Dropbox/hc/borrow_constraints/cps/set001/preamble.tex}
@@ -12,16 +14,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -81,21 +83,69 @@ Broad Steps
 \end_layout
 
 \begin_layout Enumerate
-Get variables
+Get data from IPUMS-CPS
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+list of variables to download in 
+\family typewriter
+const_cpsbc
+\family default
+.
+\end_layout
+
+\begin_layout Enumerate
+samples are ASEC; all years
+\end_layout
+
+\begin_layout Enumerate
+cases: age 16-70; empstat in labor force
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Import data into matlab
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+convert data file into matlab using StatTransfer
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+import_cpsbc.DataMatrix.import
+\family default
+ does the rest
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Recode variables and create derived variables
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\family typewriter
+import_cpsbc.DataMatrix.recode
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Filter data
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
-Make individual schooling
+
+\family typewriter
+import_cpsbc.DataMatrix.filter
 \end_layout
 
-\begin_layout Enumerate
-Make wage (for those who work)
-\end_layout
-
+\end_deeper
 \begin_layout Enumerate
 Compute stats by [age, school, year]: median wage, ...
 \end_layout
@@ -106,6 +156,14 @@ Construct cohort age earnings profiles
 
 \begin_layout Enumerate
 Compute present value of lifetime earnings by cohort, schooling.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+run_all_cpsbc
+\family default
+ runs all of these steps in order.
 \end_layout
 
 \begin_layout Section
@@ -121,11 +179,11 @@ Age: obvious
 \end_layout
 
 \begin_layout Standard
-WTSUPP: person weight (valid for incwage)
+ASECWT: person weight (valid for incwage)
 \end_layout
 
 \begin_layout Standard
-HRSWORK: hours worked last week.
+AHRSWORKT: hours worked last week.
  Consistently available (unlike UHRSWORK).
 \end_layout
 
@@ -139,7 +197,7 @@ recode to interval midpoints
 \end_layout
 
 \begin_layout Standard
-INCWAGE
+INCWAGE, INCBUS
 \end_layout
 
 \begin_layout Itemize
@@ -278,7 +336,11 @@ Earnings:
 
 \begin_layout Standard
 wage and salary income (INCWAGE), deflated by the Consumer Price Index with
- a base year of +++.
+ a base year of 
+\begin_inset Formula $\cpsCpiBaseYear$
+\end_inset
+
+.
  Top coded observations of INCWAGE are multiplied by 1.5.
 \end_layout
 

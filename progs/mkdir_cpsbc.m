@@ -2,13 +2,13 @@ function mkdir_cpsbc(setNo)
 % Make dirs for a new experiment
 % -----------------------------------
 
-cS = const_cpsbc(setNo);
+dirS = helper_cpsbc.directories(setNo);
 
-dirListV = {cS.matDir, cS.figDir, cS.tbDir};
+dirListV = {dirS.matDir, dirS.figDir, dirS.tbDir};
 
 for i1 = 1 : length(dirListV)
    if ~exist(dirListV{i1}, 'dir')
-      files_lh.mkdir_lh(dirListV{i1}, 0);
+      filesLH.mkdir_lh(dirListV{i1}, 0);
    end
 end
 

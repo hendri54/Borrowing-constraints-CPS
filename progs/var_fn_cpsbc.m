@@ -1,31 +1,30 @@
-function [fPath, fn, fDir] = var_fn_cpsbc(varNo, year1, setNo)
+function [fPath, fn, fDir] = var_fn_cpsbc(varName, year1, setName)
 % File name for a variable file
+%{
+Variables that have year dimension are written into year specfic dirs
+Checked 
+%}
 
-% Checked 
-% --------------------------------------------------------
-
-cS = const_cpsbc(setNo);
 if nargin ~= 3
    error('Invalid nargin');
 end
+assert(ischar(varName));
+assert(ischar(setName));
+dirS = helper_cpsbc.directories(setName);
 
 
 % Directory for variable files
-if varNo >= 201  &&  varNo <= 300
+if isempty(year1)
    % No year dim
-   fDir = fullfile(cS.matDir, 'mat');
-   if ~isempty(year1)
-      disp('Should not have a year dimension');
-      keyboard;
-   end
+   fDir = fullfile(dirS.matDir, 'mat');
 else
    if year1 < 1900  ||  year1 > 2020
       error('Invalid year1');
    end
-   fDir = fullfile(cS.matDir, sprintf('cps%i', year1));
+   fDir = fullfile(dirS.matDir, sprintf('cps%i', year1));
 end
 
-fn = sprintf('v%03i.mat', varNo);
+fn = [varName, '.mat'];
 
 fPath = fullfile(fDir, fn);
 

@@ -1,14 +1,12 @@
 function init_cpsbc
-% --------------------------------------------
+% Assumes that program dir is on path
 
-cS = const_cpsbc(1);
 disp('CPS data for BC');
 
-
-% go_gp;
-go_cps;
-cd(cS.progDir);
-
+% project_start('cps');
+dirS = helper_cpsbc.directories(1);
+addpath(dirS.progDir);
+cd(dirS.progDir);
 
 
 end
